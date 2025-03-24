@@ -7,7 +7,7 @@ This repository contains my solution for Case Study 2 of MAP55672 (2024-25), whi
 ## Contents
 
 - `gmres.cpp`: Complete C++ implementation including Arnoldi iteration, serial and parallel GMRES using OpenMP.
-- `CaseStudy2.pdf`: Summary report with explanations, tables, plots, and output data.
+- `CaseStudy2.md`: Summary report with explanations, tables, plots, and output data.
 - `convergence.pdf`: Plot showing residual convergence for multiple system sizes.
 - `residuals_n*.txt`: Text files containing residuals for each matrix size.
 
