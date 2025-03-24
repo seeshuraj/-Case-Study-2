@@ -1,21 +1,44 @@
 # Case Study 2 — Krylov Subspace Methods (MAP55672)
 
-## Overview
+## 📘 Module: MAP55672 (2024–25)
+**Topic:** Krylov Subspace Methods  
+**Lecturer:** Dr. P. Fritzsch  
+**Student:** Seeshuraj Bhoopalan 
+**Submission Deadline:** 26th March 2025
 
-This repository contains my solution for Case Study 2 of MAP55672 (2024-25), which focuses on Krylov Subspace Methods, specifically the GMRES algorithm.
+---
 
-## Contents
+## 🧠 Overview
 
-- `gmres.cpp`: Complete C++ implementation including Arnoldi iteration, serial and parallel GMRES using OpenMP.
-- `CaseStudy2.md`: Summary report with explanations, tables, plots, and output data.
-- `convergence.pdf`: Plot showing residual convergence for multiple system sizes.
-- `residuals_n*.txt`: Text files containing residuals for each matrix size.
+This case study involves the step-by-step implementation of the GMRES (Generalized Minimal Residual) algorithm to solve linear systems \( Ax = b \) using Krylov subspace techniques. The tasks include:
 
-## How to Compile and Run
+1. **Arnoldi Iteration** to construct an orthonormal basis for the Krylov subspace.
+2. **Serial GMRES** implementation and performance analysis.
+3. **Parallel GMRES** implementation using OpenMP, with a focus on optimizing bottleneck operations.
 
-Make sure you have a C++ compiler with OpenMP support (e.g., `g++`).
+---
 
-### Compile and run:
+## 📂 Repository Contents
+
+| Codes Folder             | Description                                                        |
+|--------------------------|--------------------------------------------------------------------|
+| `gmres.cpp`              | Combined implementation: Arnoldi, Serial & Parallel GMRES (OpenMP) |
+| `CaseStudy2.pdf`         | Summary report with algorithm descriptions, analysis, and plots    |
+| `convergence.pdf`        | Semi-log plot of normalized residuals for all matrix sizes         |
+| `residuals_n*.txt`       | Output files tracking residual history for each system size        |
+| `plot_residuals.py`      | Python script used for generating convergence plot                 |
+| `Makefile`               |  Compile automation script for C++ code                            |
+
+---
+
+## ⚙️ How to Compile and Run
+
+### 🛠 Requirements
+- C++ compiler with OpenMP support (`g++`, `clang++`, etc.)
+- Python (for plotting, optional)
+
+### 🧮 Compile the C++ Code and run
+
 ```bash
-g++ -fopenmp parallel_gmres.cpp -o gmres
+g++ -fopenmp gmres.cpp -o gmres
 ./gmres
