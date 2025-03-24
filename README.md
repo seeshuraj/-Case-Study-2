@@ -24,13 +24,18 @@ This case study involves the step-by-step implementation of the GMRES (Generaliz
 |--------------------------|--------------------------------------------------------------------|
 | `gmres.cpp`              | Combined implementation: Arnoldi, Serial & Parallel GMRES (OpenMP) |
 | `CaseStudy2.pdf`         | Summary report with algorithm descriptions, analysis, and plots    |
-| `convergence.pdf`        | Semi-log plot of normalized residuals for all matrix sizes         |
+| `convergence.pdf` & `parallel_comparison.pdf`       | Semi-log plot of normalized residuals for all matrix sizes         |
 | `residuals_n*.txt`       | Output files tracking residual history for each system size        |
 | `plot_residuals.py`      | Python script used for generating convergence plot                 |
 | `Makefile`               |  Compile automation script for C++ code                            |
 
 ---
+| Home directory             | Description                                                        |
+|--------------------------|--------------------------------------------------------------------|
+| `CaseStudy2.pdf`         | Summary report with algorithm descriptions, analysis, and plots    |
+| `Codes Folder`       | Combined implementation code of C++ and python with output       |
 
+---
 ## ⚙️ How to Compile and Run
 
 ### 🛠 Requirements
@@ -41,4 +46,12 @@ This case study involves the step-by-step implementation of the GMRES (Generaliz
 
 ```bash
 g++ -fopenmp gmres.cpp -o gmres
+```
+### Run
+```bash
 ./gmres
+```
+### 🧮 genrate graph python code
+```bash
+python3 plot_residuals.py
+```
