@@ -67,11 +67,10 @@ This documents the implementation of the Arnoldi iteration and GMRES algorithm (
 
 **Table 1**: Final Relative Residuals  
 
-| \( n \) | Iterations | \( ||r_{final}||/||b|| \) |  
-|---------|------------|---------------------------|  
-| 8       | 4          | \( 3.2 \times 10^{-7} \)  |  
-| 256     | 128        | \( 8.7 \times 10^{-5} \)  |  
-
+| n   | Iterations | Final Relative Residual |
+|-----|------------|-------------------------|
+| 8   | 4          | 3.2 x 10^-7             |
+| 256 | 128        | 8.7 x 10^-5             |
 ---
 
 
